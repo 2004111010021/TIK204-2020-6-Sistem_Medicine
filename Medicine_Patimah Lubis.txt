@@ -1,0 +1,45 @@
+
+                    <br />
+                    <ul class="sidebar-menu">
+                        <li class="active">
+                            <a href="index.php">
+                                <i class="glyphicon glyphicon-beranda"></i> <span>Beranda</span>
+                            </a>
+                        </li>
+                          
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="glyphicon glyphicon-link"></i>
+                                <span>Medicine</span>
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a href="Obat.php"><i class="fa fa-angle-double-right"></i> Scan Obat</a></li>
+                                <li><a href="input-Obat.php"><i class="fa fa-angle-double-right"></i> Info Obat</a></li>
+                            </ul>
+                        </li>
+	
+			<li class="treeview">
+                            <a href="#">
+                                <i class="glyphicon glyphicon-lock"></i> <span>Alarm</span>
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a href="admin.php"><i class="fa fa-angle-double-right"></i>Alarm Minum Obat</a></li>
+                                <li><a href="input-admin.php"><i class="fa fa-angle-double-right"></i>Tambah Alarm</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="glyphicon glyphicon-usd"></i> <span>Konsultasi Dokter</span>
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a href="404.php"><i class="fa fa-angle-double-right"></i> Profil Dokter</a></li>
+                                <li><a href="404.php"><i class="fa fa-angle-double-right"></i> Konfirmasi Dokter</a></li>
+                                <li><a href="404.php"><i class="fa fa-angle-double-right"></i> Chat Dokter</a></li>
+                            </ul>
+                        </li>
+
+                        </ul>                        
