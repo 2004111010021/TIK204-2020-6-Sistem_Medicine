@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Halaman Beranda</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+   
+    <body>
+        <div class="container">
+          <h1>Beranda</h1>
+            <form>
+                <label>Cek Kandungan Obat</label><br>
+                <link rel="stylesheet" href="style.css">
+                <label>Alarm Minum Obat</label><br>
+                <link rel="stylesheet" href="style.css">
+                <label>Konsultasi Dokter</label><br>
+                <link rel="stylesheet" href="style.css">
+            </form>
+        </div>     
+    </body>
+</html>
