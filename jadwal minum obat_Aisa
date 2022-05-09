@@ -1,0 +1,75 @@
+  <!DOCTYPE html>   
+    <html>   
+    <head>  
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <title> jadwal Minum Obat Page </title>  
+    <style>   
+    Body {  
+      font-family: Times New Roman, Helvetica, sans-serif;  
+      background-color: lightgray;  
+    }  
+    button {   
+           background-color: #4CAF50;   
+           width: 100%;  
+            color: blue;   
+            padding: 15px;   
+            margin: 15px 0px;   
+            border: none;   
+            cursor: pointer;   
+             }   
+  
+        }   
+     input[type=text], input[type=text] {   
+            width: 100%;   
+            margin: 5px 0;  
+            padding: 15px 15px;   
+            display: inline-block;   
+            border: 2px solid green;   
+            box-sizing: border-box;   
+        }  
+     button:hover {   
+            opacity: 0.6;   
+        }   
+      .cancelbtn {   
+            width: auto;   
+            padding: 10px 18px;  
+            margin: 10px 3px;  
+        }   
+        
+     .container {   
+            padding: 25px;   
+            background-color: lightgray;  
+        }   
+    </style>   
+    </head>    
+    <body>  
+    
+        <center> <h1> Jadwal Minum Obat </h1> </center>   
+        <form>  
+        <li class="treeview"> 
+                <a href="#"> 
+                <i class="glyphicon glyphicon-lock"></i> <span>Alarm</span> 
+                <i class="fa fa-angle-left pull-right"></i> 
+                </a>
+                              
+            <div class="container">  
+            <li><a href="input-admin.php"><i class="fa fa-angle-double-right"></i>Tambah Alarm</a></li> 
+                </ul> 
+                </li> 
+                <label><b>08.00 </b> <a href="#"> pilih </a>  </label>
+        		    <br><input type="button" placeholder="" name="pilih" required></br>
+                <br>
+                <label><b>13.00 </b> <a href="#"> Pilih </a> </label>
+                <br><input type="button" placeholder="" name="pilih" required></br>
+                </br>
+                <label><b>20.00 </b> <a href="#"> Pilih </a> </label>       
+                <br>
+                <br><input type="button" placeholder="" name="pilih" required></br>
+                </br>
+                <label><b> + </b> <a href="#"> TAMBAH </a> </label>       
+
+                
+        </div>   
+        </form>     
+    </body>     
+    </html> 
