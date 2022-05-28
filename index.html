@@ -1,18 +1,105 @@
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <title>Halaman Beranda</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-   
-    <body>
-        <div class="container">
-          <h1>Beranda</h1>
-            <form>
-                <label>Cek Kandungan Obat</label><br>
-                <label>Alarm Minum Obat</label><br>
-                <label>Konsultasi Dokter</label><br>
-            </form>
-        </div>     
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sistem Medicine</title>
+    <meta charset="UTF-8">
+    <meta name="description" contents="Sistem Medicine">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href=''><img src="https://i.pinimg.com/originals/8d/a3/71/8da371e67153c9205a306b6661772f03.jpg" style="float:left;" width="120px" height="80px"/> Sistem Medicine</a></div>
+               <div class="menu">
+                    <ul>  
+                        <li><a href="index.php?page=Home">Home</a></li>
+                        <li><a href="index.php?page=Scan_Obat">Scan Obat</a></li>
+                        <li><a href="index.php?page=Alarm">Alarm</a></li>
+                        <li><a href="index.php?page=Konsultasi_Dokter">Konsultasi Dokter</a></li>
+                        <li><a href="index.php?page=About">About</a></li>
+                        <li><a href="index.php?page=Log Out" class="tbl-biru">Log Out</a></li>
+                    </ul>
+        </div>
+    </nav> 
+    <div class="wrapper">
+        <!--untuk Home-->
+        <section id="Home">
+            <center><img src="medicine.jpeg" width="1000" height="500"></center>
+        </section></div>    
+
+        <!--untuk Scan Obat-->
+        <section id="Scan Obat">
+
+        </section>
+
+        <!--untuk Alarm-->
+        <section id="Alarm">
+            
+        </section>
+
+        <!--untuk Konsultasi Dokter-->
+        <section id="Konsultasi Dokter">
+
+        </section>
+
+        <!--untuk About-->
+        <section id="About">
+            <div class="tengah">
+                <div class="partner-list">
+                    <div class="kartu-partner">
+                        <img src="https://4.bp.blogspot.com/-j9bb_KLSJ7Y/UK41yzvnaUI/AAAAAAAAHLI/zucwo6J9e24/s1600/LOGO+UNSYIAH.png"/>
+                    </div>
+                    <div class="kartu-partner">
+                        <img src="https://w1.pngwing.com/pngs/575/632/png-transparent-engineering-logo-syiah-kuala-university-faculty-of-engineering-university-of-syiah-kuala-badan-eksekutif-mahasiswa-universitas-syiah-kuala-himpunan-mahasiswa-jurusan-unsyiah.png"/>
+                    </div>
+                    <div class="kartu-partner">
+                        <img src="https://www.its.ac.id/komputer/wp-content/uploads/sites/28/2020/01/Computer-Engineering.png"/>
+                    </div>
+                    <div class="kartu-partner">
+                        <img src="https://garudacyber.co.id/an-component/media/upload-gambar-artikel/rpl_3gci.jpg"/>
+                    </div>
+                    <div class="kartu-partner">
+                        <img src="https://i.pinimg.com/originals/8d/a3/71/8da371e67153c9205a306b6661772f03.jpg"/>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <div id="copyright">
+            <div class="wrapper">
+                &copy; 2022. <b>Sistem Medicine</b> All Rights Reserved
+            </div>
+        </div>
+    <div id="contents">
+        <?php 
+        if(isset($_GET['page'])){
+            $page = $_GET['page'];
+ 
+            switch ($page) {
+                case 'Home':
+                include "Home.php";
+                break;
+                case 'Alarm':
+                include "Alarm.php";
+                break;
+                case 'Konsultasi_Dokter':
+                include "Konsultasi Dokter.php";
+                break; 
+                case 'Scan_Obat':
+                include "Scan Obat.php";
+                break;  
+                case 'About':
+                include "About.php";
+                break;       
+            }
+        }
+else{
+            include "Beranda.php";
+        }
+        ?>
+ 
+    </div>
+</body>
 </html>
